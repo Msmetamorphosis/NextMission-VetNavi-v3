@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-brown: #4b2a12;
+  --medium-brown: #70421c;
+  --warm-brown: #8b5a2b;
+  --coyote-tan: #a37e4c;
+  --desert-khaki: #b4a581;
+  --sandstone-beige: #c2ba9a;
+  --pale-olive: #c6c7a2;
+  --sage-green: #9fa77a;
+  --olive-drab: #6c7450;
+  --military-green: #4a513a;
+  --deep-army-green: #333c2c;
+  --charcoal: #1f2937;
+  --accent-tan: #a38c6d;
+  --accent-olive: #4a4a20;
+  --olive-green: #6d6c3c;
+  --muted-gold: #bca55a;
+  --navy: #222833;
+  --deep-slate: #22262a;
+  --cream: #f6f6f3;
+  --accent-black: #1a1b1f;
+}
+
+@layer base {
+  :root {
+    --background: 194 186 154;
+    --foreground: 51 60 44;
+    --border: 180 165 129;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[var(--sandstone-beige)] text-[var(--deep-army-green)] min-h-screen antialiased;
+  }
+
+  .gradient-olive {
+    background: linear-gradient(135deg, var(--olive-green) 0%, #8a8960 100%);
+  }
+
+  .gradient-navy {
+    background: linear-gradient(135deg, var(--navy) 0%, #2d3748 100%);
+  }
+
+  .gradient-military {
+    background: linear-gradient(135deg, var(--military-green) 0%, var(--olive-drab) 100%);
+  }
+
+  .gradient-brown {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--medium-brown) 100%);
+  }
+
+  .gradient-tan {
+    background: linear-gradient(135deg, var(--coyote-tan) 0%, var(--desert-khaki) 100%);
+  }
+
+  .gradient-sage {
+    background: linear-gradient(135deg, var(--sage-green) 0%, var(--pale-olive) 100%);
+  }
+
+  .gradient-charcoal {
+    background: linear-gradient(135deg, var(--charcoal) 0%, var(--deep-army-green) 100%);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--military-green)] hover:bg-[var(--olive-drab)] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-[var(--dark-brown)] hover:bg-[var(--medium-brown)] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200;
+  }
+
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .military-texture {
+    background-image: linear-gradient(
+        45deg,
+        transparent 25%,
+        rgba(255, 255, 255, 0.02) 25%,
+        rgba(255, 255, 255, 0.02) 50%,
+        transparent 50%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.02) 75%
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 25%,
+        rgba(255, 255, 255, 0.02) 25%,
+        rgba(255, 255, 255, 0.02) 50%,
+        transparent 50%,
+        transparent 75%,
+        rgba(255, 255, 255, 0.02) 75%
+      );
+    background-size: 20px 20px;
+  }
+
+  .elevenlabs-widget-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  elevenlabs-convai {
+    --widget-primary-color: var(--military-green);
+    --widget-secondary-color: var(--olive-drab);
+    --widget-background-color: white;
+    --widget-text-color: var(--deep-army-green);
+    --widget-border-radius: 12px;
+    --widget-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    .elevenlabs-widget-container {
+      bottom: 80px;
+      right: 15px;
+    }
+  }
+}
