@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NextMission Navigator (v3)
 
 Fresh repo: same look and flow as the original VetNavi prototype, with **API keys on the server only**, validated JSON action plans, optional **regional resource hints**, and a separate **chat** endpoint.
@@ -38,3 +39,7 @@ Use a host that runs **Node** for Next (not static `next export`). Configure the
 ## License / assets
 
 Branding and images are project-specific; keep usage aligned with your course and organization policy.
+=======
+# NextMission-VetNavi-v3
+Final Capstone Version
+>>>>>>> e0f7b9c0495dd259037db7a2f927a083233a43e1
