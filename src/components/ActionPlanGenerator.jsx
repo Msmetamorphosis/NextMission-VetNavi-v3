@@ -76,27 +76,26 @@ export default function ActionPlanGenerator() {
   };
 
   const examples = [
-    'Buy a home with a VA loan in Texas',
-    'File for PTSD-related disability compensation',
-    'Move from military IT to civilian cybersecurity',
+    'I want to buy a home with a VA loan in Texas',
+    'Help me file for PTSD-related disability compensation',
+    'I want to transition from military IT to civilian cybersecurity',
     'Use the GI Bill for a computer science degree',
-    'Get VA mental health support for anxiety',
+    'I need help accessing VA mental health support for anxiety',
   ];
 
   return (
     <section id="action-plan-section" className="py-20 gradient-navy">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Action plan generator</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">AI Action plan generator</h2>
           <p className="text-xl text-white/90 mb-2">
-            Describe one concrete goal. We return steps, trusted links, and a short &ldquo;why this
-            plan&rdquo; summary.
+          Tell us your specific goal, and our AI will create a personalized, step-by-step action plan just for you.
           </p>
         </div>
 
         <div className="gradient-olive rounded-xl shadow-lg p-8">
           <div className="mb-6">
-            <h3 className="text-lg font-semibold mb-3 text-white">Examples (tap to load)</h3>
+            <h3 className="text-lg font-semibold mb-3 text-white">Examples (Click to Use)</h3>
             <div className="flex flex-wrap gap-2">
               {examples.map((ex) => (
                 <button
@@ -166,7 +165,7 @@ export default function ActionPlanGenerator() {
           </div>
 
           <label htmlFor="goal" className="block text-lg font-semibold mb-2 text-white">
-            Your goal
+            What's Your Specific Goal? 
           </label>
           <textarea
             id="goal"
@@ -174,7 +173,7 @@ export default function ActionPlanGenerator() {
             onChange={(e) => setGoal(e.target.value)}
             rows={5}
             className="w-full p-4 border border-gray-300 rounded-lg resize-none text-gray-900"
-            placeholder="One clear outcome you want (include timing or location if it matters)."
+            placeholder="Be specific about one clear outcome you want to achieve (include timing or location if it matters)."
           />
 
           <div className="text-center mt-8">
@@ -190,7 +189,7 @@ export default function ActionPlanGenerator() {
                 </>
               ) : (
                 <>
-                  <Send className="mr-2 h-5 w-5" /> Generate plan
+                  <Send className="mr-2 h-5 w-5" /> Generate Action plan
                 </>
               )}
             </button>

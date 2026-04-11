@@ -6,21 +6,21 @@ export default function Impact() {
       icon: Target,
       title: 'Personalized action plans',
       description:
-        'Structured steps tuned to your goal—housing, career, school, VA benefits, and more.',
+        'AI-generated, step-by-step guidance tailored to your unique military background and civilian goals.',
       bgColor: 'bg-[var(--military-green)]',
     },
     {
       icon: BookOpen,
       title: 'Curated resources',
       description:
-        'Government and nonprofit links we can inject into plans and the resource directory.',
+        'Trusted .gov, .org, and military partner resources vetted specifically for veteran success.',
       bgColor: 'bg-[var(--dark-brown)]',
     },
     {
       icon: Users,
       title: 'Chat + voice',
       description:
-        'Text chat through the site widget and optional ElevenLabs voice for quick questions.',
+        'Voice-enabled AI assistant and peer community available whenever you need guidance or connection.',
       bgColor: 'bg-[var(--coyote-tan)]',
     },
   ];
@@ -33,7 +33,7 @@ export default function Impact() {
             Mission-ready support
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            From benefits paperwork to job search—practical tools in one place.
+          From discharge to dream career, we provide the intelligence and community you need to succeed.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

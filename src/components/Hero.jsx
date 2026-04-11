@@ -18,8 +18,7 @@ export default function Hero() {
             className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed"
             style={{ color: '#5A5A5A' }}
           >
-            Personalized planning and vetted resources for veterans and transitioning
-            service members—education, career, housing, health, and benefits.
+            Your personalized AI assistant designed specifically for veterans transitioning to civilian life. Access tailored resources, support, and guidance at every step of your journey
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Link
