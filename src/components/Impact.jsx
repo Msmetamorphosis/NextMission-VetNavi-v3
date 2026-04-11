@@ -4,21 +4,21 @@ export default function Impact() {
   const features = [
     {
       icon: Target,
-      title: 'Personalized action plans',
+      title: 'Personalized Action Plans',
       description:
         'AI-generated, step-by-step guidance tailored to your unique military background and civilian goals.',
       bgColor: 'bg-[var(--military-green)]',
     },
     {
       icon: BookOpen,
-      title: 'Curated resources',
+      title: 'Curated Resources',
       description:
         'Trusted .gov, .org, and military partner resources vetted specifically for veteran success.',
       bgColor: 'bg-[var(--dark-brown)]',
     },
     {
       icon: Users,
-      title: 'Chat + voice',
+      title: '24/7 Veteran Support',
       description:
         'Voice-enabled AI assistant and peer community available whenever you need guidance or connection.',
       bgColor: 'bg-[var(--coyote-tan)]',
@@ -30,7 +30,7 @@ export default function Impact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Mission-ready support
+            Mission-Ready Support for Every Step
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
           From discharge to dream career, we provide the intelligence and community you need to succeed.
