@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import Chatbot from '@/components/Chatbot';
 import ElevenLabsWidget from '@/components/ElevenLabsWidget';
 import VeteransCommunity from '@/components/VeteransCommunity';
-import { Users, Calendar, Award, MessageCircle, Star, Trophy, Heart, Shield, Anchor, Plane, Target, BookOpen, Clock, User, Briefcase, AlertTriangle, Phone } from 'lucide-react';
+import { Users, Award, MessageCircle, Star, Heart, Shield, Anchor, Plane, Target, BookOpen, Clock, User, Briefcase, AlertTriangle, Phone } from 'lucide-react';
 
 export default function Veterans() {
   const supportFeatures = [
@@ -125,12 +125,12 @@ export default function Veterans() {
       </section>
 
       {/* Crisis Support Alert */}
-      <section className="bg-red-600 text-white py-1 shadow-lg">
+      <section className="bg-red-600 text-white py-5 shadow-lg">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center">
             <AlertTriangle className="h-8 w-8 mr-4 flex-shrink-0" />
             <div className="text-center">
-              <h3 className="font-bold text-xl mb-3">Emergency & Crisis Resources Available 24/7</h3>
+              <h3 className="font-bold text-xl mb-3">Emergency &amp; crisis resources (24/7)</h3>
               <div className="flex flex-wrap justify-center items-center gap-8 text-base">
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 mr-2" />
@@ -158,21 +158,24 @@ export default function Veterans() {
               All Branches, One Community
             </h2>
             <p className="text-lg text-white/90">
-              Veterans from every branch of service supporting each other's success.
+              Veterans from every branch of service supporting each other&apos;s success.
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-3">
-            {branchSupport.map((branch, index) => (
-              <div key={index} className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 hover:bg-white/20 transition-all duration-200 card-hover">
-                <div className={`inline-flex items-center justify-center w-7 h-7 rounded-full mr-2 ${branch.color}`}>
-                  <branch.icon className="h-3 w-3 text-white" />
+            {branchSupport.map((branch, index) => {
+              const BranchIcon = branch.icon;
+              return (
+                <div key={index} className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 hover:bg-white/20 transition-all duration-200 card-hover">
+                  <div className={`inline-flex items-center justify-center w-7 h-7 rounded-full mr-2 ${branch.color}`}>
+                    <BranchIcon className="h-3 w-3 text-white" />
+                  </div>
+                  <span className="text-white font-semibold text-sm">
+                    {branch.name}
+                  </span>
                 </div>
-                <span className="text-white font-semibold text-sm">
-                  {branch.name}
-                </span>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -193,19 +196,22 @@ export default function Veterans() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {supportFeatures.map((feature, index) => (
-              <div key={index} className={`text-center p-6 ${feature.bgColor} rounded-xl card-hover`}>
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-white/20">
-                  <feature.icon className="h-8 w-8 text-white" />
+            {supportFeatures.map((feature, index) => {
+              const FeatureIcon = feature.icon;
+              return (
+                <div key={index} className={`text-center p-6 ${feature.bgColor} rounded-xl card-hover`}>
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-white/20">
+                    <FeatureIcon className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-3 text-white">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-white/90">
+                    {feature.description}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold mb-3 text-white">
-                  {feature.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-white/90">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -218,16 +224,18 @@ export default function Veterans() {
               Mentorship Programs
             </h2>
             <p className="text-lg max-w-3xl mx-auto" style={{ color: 'var(--deep-army-green)' }}>
-              Get paired with experienced veterans who've successfully navigated the path you're on.
+              Get paired with experienced veterans who&apos;ve successfully navigated the path you&apos;re on.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {mentorshipPrograms.map((program, index) => (
+            {mentorshipPrograms.map((program, index) => {
+              const ProgramIcon = program.icon;
+              return (
               <div key={index} className="group border-2 border-gray-200 rounded-lg p-5 hover:border-[var(--olive-green)] hover:shadow-md transition-all duration-200 bg-white">
                 <div className="flex items-center mb-3">
                   <div className="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[var(--olive-green)] group-hover:text-white flex items-center justify-center mr-3 transition-colors duration-200">
-                    <program.icon className="h-4 w-4" />
+                    <ProgramIcon className="h-4 w-4" />
                   </div>
                   <h3 className="font-bold text-sm" style={{ color: 'var(--dark-brown)' }}>
                     {program.title}
@@ -255,7 +263,8 @@ export default function Veterans() {
                   Apply for Mentorship
                 </button>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -277,8 +286,8 @@ export default function Veterans() {
             Your Service Continues Here
           </h2>
           <p className="text-xl mb-8" style={{ color: 'var(--deep-army-green)' }}>
-            Join a community that understands your journey and is committed to your success. 
-            Together, we're stronger.
+            Join a community that understands your journey and is committed to your success.
+            Together, we&apos;re stronger.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-[var(--military-green)] hover:bg-[var(--olive-drab)] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">

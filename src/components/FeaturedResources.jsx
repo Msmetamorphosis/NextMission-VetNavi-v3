@@ -6,21 +6,21 @@ export default function FeaturedResources() {
     {
       icon: GraduationCap,
       title: 'Education benefits',
-      description: 'GI Bill, school comparison, certifications.',
+      description: 'GI Bill, scholarships, and certification programs to advance your career.',
       link: '/resources',
       bgColor: 'bg-[var(--sage-green)]',
     },
     {
       icon: Briefcase,
       title: 'Career transition',
-      description: 'Skills translation, job search, training programs.',
+      description: 'Job placement, resume building, and interview preparation for veterans.',
       link: '/resources',
       bgColor: 'bg-[var(--olive-drab)]',
     },
     {
       icon: Home,
       title: 'Housing assistance',
-      description: 'VA loans, rental help, state-level programs.',
+      description: 'VA home loans, rental assistance, and transitional housing programs.',
       link: '/resources',
       bgColor: 'bg-[var(--coyote-tan)]',
     },
@@ -34,10 +34,10 @@ export default function FeaturedResources() {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ color: 'var(--dark-brown)' }}
           >
-            Essential resources
+            Essential Resources at Your Fingertips
           </h2>
           <p className="text-xl max-w-2xl mx-auto" style={{ color: 'var(--deep-army-green)' }}>
-            Jump to the categories you need most.
+          Quick access to the most important benefits and services you&apos;ve earned through your military service.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 mb-12">
