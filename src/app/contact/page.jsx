@@ -1,3 +1,5 @@
+'use client';
+
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Chatbot from '@/components/Chatbot';
@@ -6,7 +8,7 @@ import ContactBody from '@/components/ContactBody';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pb-32">
       <Navigation />
       <ContactBody />
       <Footer />
