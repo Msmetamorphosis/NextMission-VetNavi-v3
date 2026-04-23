@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # NextMission Navigator (v3)
 
 Fresh repo: same look and flow as the original VetNavi prototype, with **API keys on the server only**, validated JSON action plans, optional **regional resource hints**, and a separate **chat** endpoint.
@@ -10,21 +10,6 @@ Fresh repo: same look and flow as the original VetNavi prototype, with **API key
 - Anthropic Messages API (Claude) for action plans + chat
 - ElevenLabs ConvAI embed (optional)
 
-## Setup
-
-```bash
-cd NextMission-VetNavi-v3
-npm install
-cp .env.example .env.local
-# add ANTHROPIC_API_KEY
-npm run dev
-```
-
-Without `ANTHROPIC_API_KEY`, action plans and chat use short **offline fallbacks** so the UI still demos.
-
-## Deploy
-
-Use a host that runs **Node** for Next (not static `next export`). Configure the same env vars. On Netlify, use the official Next runtime plugin so `/api/*` routes work.
 
 ## Project layout
 
@@ -36,10 +21,6 @@ Use a host that runs **Node** for Next (not static `next export`). Configure the
 | `src/data/resources/catalog.ts` | Resource directory + regional rows (TX, FL, Tampa) |
 | `src/prompts/*` | Short system prompts (easy to edit without touching UI) |
 
-## License / assets
 
-Branding and images are project-specific; keep usage aligned with your course and organization policy.
-=======
 # NextMission-VetNavi-v3
 Final Capstone Version
->>>>>>> e0f7b9c0495dd259037db7a2f927a083233a43e1
