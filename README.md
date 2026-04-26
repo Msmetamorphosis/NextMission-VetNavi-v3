@@ -6,7 +6,7 @@ Fresh repo: same look and flow as the original VetNavi prototype, with **API key
 ## Stack
 
 - Next.js 15 (App Router), React 19, TypeScript
-- Tailwind CSS 3 (palette matches the shipped prototype)
+- Tailwind CSS 3 
 - Anthropic Messages API (Claude) for action plans + chat
 - ElevenLabs ConvAI embed (optional)
 
