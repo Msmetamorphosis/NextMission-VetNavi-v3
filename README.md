@@ -1,7 +1,7 @@
 
 # NextMission Navigator (v3)
 
-Fresh repo: same look and flow as the original VetNavi prototype, with **API keys on the server only**, validated JSON action plans, optional **regional resource hints**, and a separate **chat** endpoint.
+Fresh repo: same look and flow as the original VetNavi prototype, with validated JSON action plans, optional **regional resource hints**, and a separate **chat** endpoint.
 
 ## Stack
 
